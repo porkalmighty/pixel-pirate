@@ -1,0 +1,377 @@
+/* helper */
+.hidden-element {
+  position: absolute;
+  left: -10000px;
+}
+
+/* General */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {}
+
+div,
+section,
+main {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  margin-right: 5px;
+  text-align: left;
+}
+
+h2{
+  font-size: 2em;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.pirate_desc {
+  padding: 0 20px;
+}
+
+.char,
+.item {
+  margin-bottom: 25px;
+}
+
+.character-image,
+.item-image {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+
+/* Key Frames */
+@keyframes turntable {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bg-animation {
+  0%, 100% {
+    background-color: #1c8bc1;
+  }
+  20% {
+    background-color: #49a2cd;
+  }
+  30% {
+    background-color: #76b9d9;
+  }
+  40% {
+    background-color: #a4d0e6;
+  }
+  50%, 70% {
+    background-color: #8dc5e0;
+  }
+  80% {
+    background-color: #60add3;
+  }
+  90% {
+    background-color: #3296c7;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes attack {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1200px;
+  }
+}
+
+@keyframes jump {
+  0%,100%{
+    top: calc(100% - 100px);
+  }
+  50% {
+    top: 30%;
+  }
+}
+
+/* Header */
+.navbar {
+  justify-content: space-between;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+/* Slideshow */
+#css-slideshow {
+  padding: 20vh 0;
+  background: #760a0a;
+}
+
+
+/* Characters */
+
+#characters {
+  background-color: #5e2a0e;
+  color: #fff;
+}
+
+#pirate-crew .character-image {
+ background-image: url(assets/sprites/characters/crew/pirate-idle.png);
+}
+
+#pirate-captain .character-image {
+ background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
+}
+
+#landlubber .character-image {
+ background-image: url(assets/sprites/characters/landlubber/landlubber.png);
+}
+
+
+/* Items */
+
+#cutlass .item-image {
+  background-image: url(assets/sprites/props/cutlass.png);
+}
+
+#pistol .item-image {
+  background-image: url(assets/sprites/props/flintlock-pistol.png);
+}
+
+#shotgun .item-image {
+  background-image: url(assets/sprites/props/blunderbuss.png);
+}
+
+#cannon .item-image {
+  background-image: url(assets/sprites/props/cannon.png);
+}
+
+#gold .item-image {
+  background-image: url(assets/sprites/props/pieces-of-eight.png);
+}
+
+#chest .item-image {
+  background-image: url(assets/sprites/props/treasure-chest.png);
+}
+
+#flag .item-image {
+  background-image: url(assets/sprites/props/jolly-roger.png);
+}
+
+#ale .item-image {
+  background-image: url(assets/sprites/props/Ale.png);
+}
+
+
+/* Music Box */
+#music-box {
+  margin-bottom: 30px;
+  background-color: #1c8bc1;
+}
+
+#music-box.play {
+  animation-name: bg-animation;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+#trackList {
+  text-align: center;
+}
+
+#lp-outer {
+  animation-name: turntable;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+#lp-outer.play {
+  animation-play-state: running;
+}
+
+#lp-inner,
+#lp-hole,
+#album-art {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#lp-wrap{
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+#lp-outer {
+  width: 400px;
+  height: 400px;
+  background-color: #333;
+  border: 1px solid #000;
+  position: relative;
+  margin: 0 auto;
+}
+
+#lp-inner {
+width: 370px;
+height: 370px;
+background-color: #444;
+}
+
+#lp-hole {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 20px double #333;
+}
+
+#album-art {
+  width: 210px;
+  height: 210px;
+  border: 5px outset #2e2e2e;
+  background-image: url(assets/album-art/alestorm.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#playList {
+  z-index: 1; /* to prevent the edges of turntable from covering the controls*/
+  margin-bottom: 20px;
+}
+
+.btn-controls {
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #5e2a0e;
+  color: 	#ddd417;
+}
+
+.speakers {
+  width: 250px;
+  height: 350px;
+  background-color: #333;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #555;
+}
+
+.speakers.left {
+    border-radius: 50% 25% 25%;
+}
+
+.speakers.right {
+    border-radius: 25% 50% 25% 25%;
+}
+
+.tweeter {
+  width: 75px;
+  height: 75px;
+  background: #eee;
+  border: 50px double #444;
+  margin-bottom: 1em;
+}
+
+.woofer {
+  width: 150px;
+  height: 150px;
+  background: #efefef;
+  border: 51px dashed #444;
+}
+
+.woofer.pulse {
+  animation-name: pulsing;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+
+#speaker-left {
+  order: -1;
+}
+
+/* Demo */
+.captain {
+  height: 200px;
+  width: calc(2400px/12);
+  background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
+  position: relative;
+}
+
+.captain.attack {
+  background-image: url(assets/sprites/characters/captain/captain-4-attack.png);
+  animation: attack 0.6s steps(12) 1;
+}
+
+.captain.jump {
+  background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
+  animation: jump 0.8s linear alternate-reverse;
+}
+
+.captain.left {
+  transform: scaleX(-1);
+  background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
+}
+
+.captain.right {
+  transform: scaleX(1);
+  background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
+}

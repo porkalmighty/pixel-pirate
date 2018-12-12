@@ -11,9 +11,122 @@ main {
 }
 
 #playAreaWrapper {
-  height: 300px;
+  height: 500px;
+  max-width: 1000px;
   position: relative;
   overflow: hidden;
+  animation: scenes 93s linear 1;
+  margin: 0 auto;
+}
+
+#sun {
+  position: absolute;
+  background: yellow;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: sun 93s steps(93) 1;
+}
+
+.lyrics {
+  position: absolute;
+}
+
+.lyrics * {
+  font-size: 4em;
+}
+
+#lyrics-1 h1{
+  font-size: 4.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation:
+    typing 2.5s steps(45, end),
+    disappear 0.5s linear 1 forwards;
+    animation-delay: 0s, 8s;
+}
+
+#lyrics-2{
+  opacity: 0;
+  margin-top: 10px;
+  animation: down-low 2s linear 1 forwards,
+  disappear 0.5s linear 1 forwards;
+  animation-delay: 2.5s, 8s;
+  width: 100%;
+}
+
+#lyrics-3{
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+#lyrics-3 h2 {
+  margin: 0;
+  opacity: 0;
+}
+
+#lyrics-3 h2:nth-of-type(1) {
+  animation:
+  appear 1s linear 1 forwards,
+  disappear 0.5s linear 1 forwards;
+  animation-delay: 5s, 8s;
+}
+
+#lyrics-3 h2:nth-of-type(2) {
+  animation:
+  appear 1s linear 1 forwards,
+  disappear 0.5s linear 1 forwards;
+  animation-delay: 5.5s, 8s;
+}
+
+#lyrics-3 h2:nth-of-type(3) {
+  animation:
+  appear 1s linear 1 forwards,
+  disappear 0.5s linear 1 forwards;
+  animation-delay: 6s, 8s;
+}
+
+#lyrics-3 h2:nth-of-type(4) {
+  animation:
+  appear 1s linear 1 forwards,
+  disappear 0.5s linear 1 forwards;
+  animation-delay: 6.5s, 8s;
+}
+
+#lyrics-4, #lyrics-5 {
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
+
+#lyrics-4 h2, #lyrics-5 h2{
+  margin: 0;
+  font-size: 45vh;
+}
+
+#lyrics-4 {
+  background-color: white;
+  animation: tilt 1s linear forwards;
+  animation-delay: 8.5s;
+}
+
+#lyrics-4 h2 {
+  animation: tilt 1s linear forwards;
+  animation-delay: 9.5s;
+}
+
+#lyrics-5 {
+  background-color: maroon;
+  animation: tilt-out 1s linear forwards;
+  animation-delay: 10.5s;
+}
+
+#lyrics-5 h2{
+  animation: tilt 1.5s linear forwards;
+  animation-delay: 11s;
 }
 
 #captain-1.captain {
@@ -34,42 +147,15 @@ main {
   background-image: url(assets/sprites/characters/captain/captain-idle-3.png);
 }
 
-#captain-4.captain {
-  height: 100px;
-  width: calc(1200px/12);
+.captain {
+  height: 124px;
+  width: calc(2400px/12);
   background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
   position: relative;
-  top: calc(100% - 100px);
+  top: calc(100% - 124px);
 }
 
-@keyframes attack {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 1200px;
-  }
-}
-
-@keyframes pirate-attack {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 800px;
-  }
-}
-
-@keyframes jump {
-  0%,100%{
-    top: calc(100% - 100px);
-  }
-  50% {
-    top: 30%;
-  }
-}
-
-#captain-4.captain.attack {
+.captain.attack {
   background-image: url(assets/sprites/characters/captain/captain-4-attack.png);
   animation: attack 0.6s steps(12) 1;
 }
@@ -102,4 +188,155 @@ main {
 
 .pirate.attack {
   animation: pirate-attack 0.4s steps(8) 1;
+}
+
+/* Keyfreames */
+@keyframes attack {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1200px;
+  }
+}
+
+@keyframes pirate-attack {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 800px;
+  }
+}
+
+@keyframes jump {
+  0%,100%{
+    top: calc(100% - 100px);
+  }
+  50% {
+    top: 30%;
+  }
+}
+
+@keyframes sun {
+  0% {
+    left:90%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+@keyframes scenes {
+  0% {
+    background: red;
+  }
+
+  10% {
+    background: yellow;
+  }
+
+  20% {
+    background: green;
+  }
+
+  30%{
+    background: blue;
+  }
+
+  40%{
+    background: pink;
+  }
+
+  50%{
+    background: white;
+  }
+
+  60% {
+    background: black;
+  }
+
+  70% {
+    background: gray;
+  }
+
+  80%{
+    background: maroon;
+  }
+
+  90%{
+    background: magenta;
+  }
+
+  100%{
+    background: orange;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%;}
+}
+
+@keyframes down-low {
+  from {
+    left: 100%;
+    opacity:1;
+  }
+  to {
+    left: 15%;
+    opacity:1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
+
+@keyframes front {
+  from {
+    z-index: -1
+  }
+  to {
+    z-index: 3
+  }
+}
+
+@keyframes tilt {
+  10%, 35% {
+		transform: scale(2, .2) translate(0, 0);
+	}
+
+	45%, 50% {
+		transform: scale(1) translate(0, -150px);
+	}
+
+	80% {
+		transform: scale(1) translate(0, 0);
+	}
+}
+
+@keyframes tilt-out {
+  from {
+    transform: rotate(-180deg);
+    transform-origin: left;
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
