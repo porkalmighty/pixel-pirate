@@ -103,24 +103,6 @@ h2{
 
 /* Key Frames */
 
-/* The typing effect
-  reference: https://css-tricks.com/snippets/css/typewriter-effect/
-*/
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%;}
-}
-
-@-webkit-keyframes typing {
-  from { width: 0; }
-  to { width: 100%;}
-}
-
-@-moz-keyframes typing {
-  from { width: 0; }
-  to { width: 100%;}
-}
-
 @keyframes down-low {
   from {
     left: 100%;

@@ -78,7 +78,6 @@ jQuery(document).ready(function(){
   jQuery("#track_1").on("ended", function(){
     music.pause();
     $playButton.html("<i class=\"fas fa-play\"></i>");
-    $tonearm.removeClass("play");
     $turntable.removeClass("play");
     $musicBox.removeClass("play");
     clearInterval(interval);
