@@ -153,6 +153,11 @@ jQuery(document).ready(function(){
     }
   }
 
+  // mobile menu
+  jQuery('#mobile').click(function(){
+    jQuery('#menu').toggleClass('mobile');
+  });
+
 
   // animating the scroll so when a user clicks a link, the transition would be smooth insteead of just jumping
   jQuery("#menu li a").click(function(e) {

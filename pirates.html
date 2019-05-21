@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Pirate Game Microsite</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pirata+One|Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="pirate.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+      integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pirata+One|Roboto+Slab"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pirate.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
@@ -16,10 +32,16 @@
         <div class="navbar flex-wrapper">
           <div id="Logo">
             <h1 class="hidden-element">Pixel Pirates</h1>
-            <img src="assets/images/logo.png" alt="logo of a pixel pirate placed inside a circle shape">
+            <img
+              src="assets/images/logo.png"
+              alt="logo of a pixel pirate placed inside a circle shape"
+            />
           </div>
-          <nav>
-            <ul id="menu">
+          <button type="button" id="mobile" class="btn btn-mobile" name="mobile-button">
+            <i class="fas fa-bars"></i> Menu
+          </button>
+          <nav id="menu">
+            <ul>
               <h2 class="hidden-element">Navigation</h2>
               <li><a href="#home">Home</a></li>
               <li><a href="#characters">Characters</a></li>
@@ -33,58 +55,60 @@
       </div>
     </header>
     <div class="pure-g">
-    <main class="pure-u-1" id="home">
-      <section id="css-slideshow">
-        <div class="wrapper">
-          <div class="flex-wrapper">
-            <h2 class="hidden-element">Css Slideshow</h2>
-            <div class="pure-u-1" id="slideArea">
-              <div class="lyrics" id="lyrics-1">
-                <h2>DO WHAT YOU WANT</h2>
-              </div>
-              <div class="lyrics" id="lyrics-2">
-                <h2>'CAUSE A PIRATE IS FREE</h2>
-              </div>
-              <div class="lyrics" id="lyrics-3">
-                <h2>YOU</h2>
-                <h2>ARE</h2>
-                <h2>A</h2>
-                <h2>PIRATE!</h2>
+      <main class="pure-u-1" id="home">
+        <section id="css-slideshow">
+          <div class="wrapper">
+            <div class="flex-wrapper">
+              <h2 class="hidden-element">Css Slideshow</h2>
+              <div class="pure-u-1" id="slideArea">
+                <div class="lyrics" id="lyrics-1">
+                  <h2>DO WHAT YOU WANT</h2>
+                </div>
+                <div class="lyrics" id="lyrics-2">
+                  <h2>'CAUSE A PIRATE IS FREE</h2>
+                </div>
+                <div class="lyrics" id="lyrics-3">
+                  <h2>YOU</h2>
+                  <h2>ARE</h2>
+                  <h2>A</h2>
+                  <h2>PIRATE!</h2>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="characters">
-        <div class="wrapper">
-          <div class="flex-wrapper">
-            <div class="pure-u-1">
-              <h2>Characters</h2>
-            </div>
-            <div class="char pure-u-1 pure-u-md-1-3" id="animate_pirate">
-              <div class="character-image pirate-crew"></div>
-              <h3 class="pirate_title">Pirate Crew</h3>
-              <p class="pirate_desc">A seadog who pillages ships and is loyal to the captain</p>
-            </div>
-            <div class="char pure-u-1 pure-u-md-1-3" id="animate_captain">
-              <div class="character-image pirate-captain"></div>
-              <h3 class="pirate_title">Pirate Captain</h3>
-              <p class="pirate_desc">Yarr! The mighty Captain will guide us on every quest</p>
-            </div>
-            <div class="char pure-u-1 pure-u-md-1-3" id="animate_landlubber">
-              <div class="character-image landlubber"></div>
-              <h3 class="pirate_title">Landlubber</h3>
-              <p class="pirate_desc">A commoner, a person who doesn't know anything about the sea</p>
-            </div>
+        </section>
+        <section id="characters">
+          <div class="wrapper">
+            <div class="flex-wrapper">
+              <div class="pure-u-1"><h2>Characters</h2></div>
+              <div class="char pure-u-1 pure-u-md-1-3" id="animate_pirate">
+                <div class="character-image pirate-crew"></div>
+                <h3 class="pirate_title">Pirate Crew</h3>
+                <p class="pirate_desc">
+                  A seadog who pillages ships and is loyal to the captain
+                </p>
+              </div>
+              <div class="char pure-u-1 pure-u-md-1-3" id="animate_captain">
+                <div class="character-image pirate-captain"></div>
+                <h3 class="pirate_title">Pirate Captain</h3>
+                <p class="pirate_desc">
+                  Yarr! The mighty Captain will guide us on every quest
+                </p>
+              </div>
+              <div class="char pure-u-1 pure-u-md-1-3" id="animate_landlubber">
+                <div class="character-image landlubber"></div>
+                <h3 class="pirate_title">Landlubber</h3>
+                <p class="pirate_desc">
+                  A commoner, a person who doesn't know anything about the sea
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <section id="items">
           <div class="wrapper">
             <div class="flex-wrapper">
-              <div class="pure-u-1">
-                <h2>Items</h2>
-              </div>
+              <div class="pure-u-1"><h2>Items</h2></div>
               <div class="item pure-u-1 pure-u-md-1-3" id="cutlass">
                 <div class="item-image"></div>
                 <h3 class="item_title">Cutlass</h3>
@@ -123,7 +147,10 @@
               <div class="item pure-u-1 pure-u-md-1-3" id="ale">
                 <div class="item-image"></div>
                 <h3 class="item_title">Ale</h3>
-                <p class="item_desc">A pirate's favorite drink that will send you three sheets to the wind! + 25 health</p>
+                <p class="item_desc">
+                  A pirate's favorite drink that will send you three sheets to
+                  the wind! + 25 health
+                </p>
               </div>
             </div>
           </div>
@@ -134,15 +161,18 @@
               <div class="pure-u-1">
                 <h2>Music Box</h2>
                 <!--
-                I based the pulsing animation effect in this video
-                https://www.youtube.com/watch?v=ZTBekkqA2rM
-                I added some functions like stop and mute which we learned from Sean's class
-                I alsp added tonearm animation when the song starts and when the song ends
-                  -->
+                  I based the pulsing animation effect in this video
+                  https://www.youtube.com/watch?v=ZTBekkqA2rM
+                  I added some functions like stop and mute which we learned from Sean's class
+                  I also added tonearm animation when the song starts and when the song ends
+                -->
               </div>
               <div id="turntable" class="pure-u-1 pure-u-md-1 pure-u-sm-1">
                 <div class="flex-wrapper">
-                  <div class="pure-u-md-2-5" id="disc">
+                  <div
+                    class="pure-u-sm-17-24 pure-u-md-13-24 pure-u-lg-2-5"
+                    id="disc"
+                  >
                     <div id="tone-arm">
                       <div id="counterbalance"></div>
                       <div id="cartridge"></div>
@@ -157,13 +187,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="pure-u-md-1-5" id="speaker-left">
+                  <div
+                    class="pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-5"
+                    id="speaker-left"
+                  >
                     <div class="speakers left">
                       <div class="tweeter round"></div>
                       <div class="woofer round"></div>
                     </div>
                   </div>
-                  <div class="pure-u-md-1-5" id="speaker-right">
+                  <div
+                    class="pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-5"
+                    id="speaker-right"
+                  >
                     <div class="speakers right">
                       <div class="tweeter round"></div>
                       <div class="woofer round"></div>
@@ -174,17 +210,47 @@
               <div id="playList" class="pure-u-1 pure-u-md-1 pure-u-sm-1">
                 <h2 class="hidden-element">Player Controls</h2>
                 <div id="trackList" class="pure-u-1">
-                  <p> Alestorm - You are a pirate! </p>
+                  <p>Alestorm - You are a pirate!</p>
                   <audio id="track_1" data-bpm="121">
-                    <source src="assets/audio/alestorm-you-are-a-pirate.ogg" type="audio/ogg">
-                    <source src="assets/audio/alestorm-you-are-a-pirate.mp3" type="audio/mp3">
-                    <source src="assets/audio/alestorm-you-are-a-pirate.wma" type="audio/wma">
+                    <source
+                      src="assets/audio/alestorm-you-are-a-pirate.ogg"
+                      type="audio/ogg"
+                    />
+                    <source
+                      src="assets/audio/alestorm-you-are-a-pirate.mp3"
+                      type="audio/mp3"
+                    />
+                    <source
+                      src="assets/audio/alestorm-you-are-a-pirate.wma"
+                      type="audio/wma"
+                    />
                   </audio>
                 </div>
                 <div id="playerControls" class="pure-u-1">
-                  <button type="button" name="play_button" class="btn btn-controls"><span class="hidden-element">Play button</span><i class="fas fa-play"></i></button>
-                  <button type="button" name="stop_button" class="btn btn-controls"><span class="hidden-element">Stop button</span><i class="fas fa-stop"></i></button>
-                  <button type="button" name="mute_button" class="btn btn-controls"><span class="hidden-element">Mute button</span><i class="fas fa-volume-mute"></i></button>
+                  <button
+                    type="button"
+                    name="play_button"
+                    class="btn btn-controls"
+                  >
+                    <span class="hidden-element">Play button</span
+                    ><i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    type="button"
+                    name="stop_button"
+                    class="btn btn-controls"
+                  >
+                    <span class="hidden-element">Stop button</span
+                    ><i class="fas fa-stop"></i>
+                  </button>
+                  <button
+                    type="button"
+                    name="mute_button"
+                    class="btn btn-controls"
+                  >
+                    <span class="hidden-element">Mute button</span
+                    ><i class="fas fa-volume-mute"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -193,9 +259,7 @@
         <section id="demo">
           <div class="wrapper">
             <div class="flex-wrapper">
-              <div class="pure-u-1">
-                <h2>Demo</h2>
-              </div>
+              <div class="pure-u-1"><h2>Demo</h2></div>
               <div class="pure-u-1 pure-u-md-3-4 pure-sm-3-4" id="playArena">
                 <div class="captain" id="pirate-captain"></div>
               </div>
@@ -203,11 +267,10 @@
                 <div id="sidebar-container">
                   <h3>controls</h3>
                   <ul>
-                    <li> w - jump</li>
-                    <li> a - move left</li>
-                    <li> d - move right</li>
-                    <li> x / leftclick - attack with cutlass </li>
-                    <li> z / right click - attack with pistol (not yet implemented) </li>
+                    <li>w - jump</li>
+                    <li>a - move left</li>
+                    <li>d - move right</li>
+                    <li>x / leftclick - attack with cutlass</li>
                   </ul>
                 </div>
               </aside>
@@ -217,14 +280,18 @@
         <section id="about">
           <div class="wrapper">
             <div class="flex-wrapper">
+              <div class="pure-u-1"><h2>About</h2></div>
               <div class="pure-u-1">
-                <h2>About</h2>
-              </div>
-              <div class="pure-u-1">
-                <p>This website is for demo purposes only, the game is still in development stage</p>
+                <p>
+                  This website is for demo purposes only, It is a microsite for
+                  a pirates game made solely as a school project.
+                </p>
 
                 <h3>Disclaimer</h3>
-                <p>The audio is not mine. The music is from Alestorm's Back through time album</p>
+                <p>
+                  The audio is not mine. The music is from Alestorm's Back
+                  through time album
+                </p>
               </div>
             </div>
           </div>
@@ -235,7 +302,7 @@
           <div class="flex-wrapper">
             <div class="pure-g">
               <div class="pure-u-1">
-                  <p> Roentgen Mark Martin &copy; 2018</p>
+                <p>Roentgen Mark Martin &copy; 2018</p>
               </div>
             </div>
           </div>

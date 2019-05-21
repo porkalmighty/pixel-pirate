@@ -15,32 +15,39 @@
 /* General */
 @font-face {
   font-family: PirateKing;
-  src: url('assets/fonts/KING-OF-PIRATE.otf');
+  src: url("assets/fonts/KING-OF-PIRATE.otf");
 }
 
 @font-face {
   font-family: CaptainTable;
-  src: url('assets/fonts/CAPTT.ttf');
+  src: url("assets/fonts/CAPTT.ttf");
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  font: normal 1em/1.25em 'Roboto Slab', serif;
+  font: normal 1em/1.25em "Roboto Slab", serif;
 }
 
-.pure-g [class*=pure-u] {
-  font-family: 'Roboto Slab', serif;
+.pure-g [class*="pure-u"] {
+  font-family: "Roboto Slab", serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Pirata One', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pirata One", cursive;
   font-weight: bold;
   letter-spacing: 3px;
 }
@@ -55,13 +62,13 @@ ul {
   padding: 0;
 }
 
-li{
+li {
   list-style: none;
   margin-right: 20px;
   text-align: left;
 }
 
-h2{
+h2 {
   font-size: 3em;
 }
 
@@ -100,66 +107,65 @@ h2{
   margin: 0 auto;
 }
 
-
 /* Key Frames */
 
 @keyframes down-low {
   from {
     left: 100%;
-    opacity:1;
+    opacity: 1;
   }
   to {
     left: 0%;
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes down-low {
   from {
     left: 100%;
-    opacity:1;
+    opacity: 1;
   }
   to {
     left: 0%;
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes down-low {
   from {
     left: 100%;
-    opacity:1;
+    opacity: 1;
   }
   to {
     left: 0%;
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @keyframes appear {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes appear {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @-moz-keyframes appear {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -195,31 +201,37 @@ h2{
 
 /* tone arm animation for the music box */
 @keyframes tonearm {
-  0%, 100%{
+  0%,
+  100% {
     transform: rotate(0deg);
   }
 
-  1%, 99% {
+  1%,
+  99% {
     transform: rotate(15deg);
   }
 }
 
 @-webkit-keyframes tonearm {
-  0%, 100%{
+  0%,
+  100% {
     transform: rotate(0deg);
   }
 
-  1%, 99% {
+  1%,
+  99% {
     transform: rotate(15deg);
   }
 }
 
 @-moz-keyframes tonearm {
-  0%, 100%{
+  0%,
+  100% {
     transform: rotate(0deg);
   }
 
-  1%, 99% {
+  1%,
+  99% {
     transform: rotate(15deg);
   }
 }
@@ -229,83 +241,123 @@ h2{
   https://uigradients.com/#Shore
 */
 @keyframes bg-animation {
-  0%, 100% {
+  0%,
+  100% {
     background-color: #1c8bc1;
   }
   30% {
-    background-color: #70e1f5;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #70e1f5; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(
+      to right,
+      #ffd194,
+      #70e1f5
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(
+      to right,
+      #ffd194,
+      #70e1f5
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   90% {
-    background-color: #F0C27B;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #f0c27b; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(
+      to right,
+      #4b1248,
+      #f0c27b
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(
+      to right,
+      #4b1248,
+      #f0c27b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
-
 @-webkit-keyframes bg-animation {
-  0%, 100% {
+  0%,
+  100% {
     background-color: #1c8bc1;
   }
   30% {
-    background-color: #70e1f5;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #70e1f5;
+    /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+    ); /* Chrome 10-25, Safari 5.1-6
+    background-color: linear-gradient(
+      to right,
+      #ffd194,
+      #70e1f5
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   90% {
-    background-color: #F0C27B;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #f0c27b; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(
+      to right,
+      #4b1248,
+      #f0c27b
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(
+      to right,
+      #4b1248,
+      #f0c27b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
-
 @-moz-keyframes bg-animation {
-  0%, 100% {
+  0%,
+  100% {
     background-color: #1c8bc1;
   }
   30% {
-    background-color: #70e1f5;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #70e1f5; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(
+      to right,
+      #ffd194,
+      #70e1f5
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(
+      to right,
+      #ffd194,
+      #70e1f5
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   90% {
-    background-color: #F0C27B;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #f0c27b; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(
+      to right,
+      #4b1248,
+      #f0c27b
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(
+      to right,
+      #4b1248,
+      #f0c27b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
-
 @keyframes pulsing {
   0% {
     transform: scale(1.2);
   }
-
   100% {
     transform: scale(1);
   }
 }
-
 @-webkit-keyframes pulsing {
   0% {
     transform: scale(1.2);
   }
-
   100% {
     transform: scale(1);
   }
 }
-
 @-moz-keyframes pulsing {
   0% {
     transform: scale(1.2);
   }
-
   100% {
     transform: scale(1);
   }
 }
-
 @keyframes attack {
   0% {
     background-position: 0;
@@ -314,7 +366,6 @@ h2{
     background-position: 3876px;
   }
 }
-
 @-webkit-keyframes attack {
   0% {
     background-position: 0;
@@ -323,7 +374,6 @@ h2{
     background-position: 3876px;
   }
 }
-
 @-moz-keyframes attack {
   0% {
     background-position: 0;
@@ -332,34 +382,33 @@ h2{
     background-position: 3876px;
   }
 }
-
 @keyframes jump {
-  0%,100%{
+  0%,
+  100% {
     top: calc(100% - 200px);
   }
   50% {
     top: 30%;
   }
 }
-
 @-webkit-keyframes jump {
-  0%,100%{
+  0%,
+  100% {
     top: calc(100% - 200px);
   }
   50% {
     top: 30%;
   }
 }
-
 @-moz-keyframes jump {
-  0%,100%{
+  0%,
+  100% {
     top: calc(100% - 100px);
   }
   50% {
     top: 30%;
   }
 }
-
 @keyframes wobble {
   from {
     transform: rotate(3deg);
@@ -368,7 +417,6 @@ h2{
     transform: rotate(-3deg);
   }
 }
-
 @-moz-keyframes wobble {
   from {
     transform: rotate(3deg);
@@ -377,104 +425,86 @@ h2{
     transform: rotate(-3deg);
   }
 }
-
 @-webkit-keyframes wobble {
   from {
     transform: rotate(3deg);
   }
-
   to {
     transform: rotate(-3deg);
   }
 }
-
 @keyframes collapse {
-  from  {
+  from {
     transform: rotate(0deg);
   }
-
-  to  {
+  to {
     transform: rotate(90deg);
   }
 }
-
 @-webkit-keyframes collapse {
-  from  {
+  from {
     transform: rotate(0deg);
   }
-
-  to  {
+  to {
     transform: rotate(90deg);
   }
 }
-
 @-moz-keyframes collapse {
-  from  {
+  from {
     transform: rotate(0deg);
   }
-
-  to  {
+  to {
     transform: rotate(90deg);
   }
 }
-
 @keyframes weapon-rotate {
-  from{
+  from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(-90deg);
   }
 }
-
 @-webkit-keyframes weapon-rotate {
-  from{
+  from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(-90deg);
   }
 }
-
 @-moz-keyframes weapon-rotate {
-  from{
+  from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(-90deg);
   }
 }
-
 @keyframes empty-mug {
   from {
     background-position: 0px;
   }
-  to{
+  to {
     background-position: 1600px;
   }
 }
-
 @-webkit-keyframes empty-mug {
   from {
     background-position: 0px;
   }
-  to{
+  to {
     background-position: 1600px;
   }
 }
-
 @-moz-keyframes empty-mug {
   from {
     background-position: 0px;
   }
-  to{
+  to {
     background-position: 1600px;
   }
 }
-
 @keyframes flag-switch {
   from {
     background-position: 400px;
@@ -483,7 +513,6 @@ h2{
     background-position: 0px;
   }
 }
-
 @-webkit-keyframes flag-switch {
   from {
     background-position: 400px;
@@ -492,7 +521,6 @@ h2{
     background-position: 0px;
   }
 }
-
 @-moz-keyframes flag-switch {
   from {
     background-position: 400px;
@@ -501,7 +529,6 @@ h2{
     background-position: 0px;
   }
 }
-
 /* Header */
 .navbar {
   justify-content: space-between;
@@ -511,27 +538,44 @@ h2{
   padding: 20px 0;
 }
 
+#menu.mobile  {
+  position: relative;
+  left: 0;
+}
+
+.btn-mobile {
+  display: none;
+  flex: 1 100%;
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-mobile i {
+  padding-right: 5px;
+}
+
 header {
   background-color: #1c8bc1;
 }
-
 #menu li {
   display: inline-block;
 }
-
 #menu li a {
   text-decoration: none;
   font-size: 1.5em;
   color: #ddd417;
 }
-
 header {
   padding: 10px 0;
   transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
 }
-
 header.sticky {
   position: fixed;
   width: 100%;
@@ -539,26 +583,21 @@ header.sticky {
   z-index: 100;
   height: 70px;
 }
-
 header.sticky img {
   width: 75%;
 }
-
 /* Slideshow */
 #css-slideshow {
   background: #760a0a;
 }
-
 #slideArea {
   height: 450px;
   position: relative;
 }
-
 .lyrics {
   position: relative;
 }
-
-#lyrics-1{
+#lyrics-1 {
   animation: down-low 2s linear 1 forwards;
   animation-delay: 0s;
   -webkit-animation: down-low 2s linear 1 forwards;
@@ -567,8 +606,7 @@ header.sticky img {
   -moz-animation-delay: 0s;
   width: 100%;
 }
-
-#lyrics-2{
+#lyrics-2 {
   opacity: 0;
   margin-top: 20px;
   animation: down-low 2s linear 1 forwards;
@@ -579,146 +617,129 @@ header.sticky img {
   -moz-animation-delay: 2.5s;
   width: 100%;
 }
-
-#lyrics-3{
+#lyrics-3 {
   width: 100%;
   text-align: center;
 }
-
 #lyrics-3 h2 {
   margin: 50px 0;
   opacity: 0;
 }
-
 #lyrics-3 h2:nth-of-type(1) {
-  animation:  appear 1s linear 1 forwards;
+  animation: appear 1s linear 1 forwards;
   animation-delay: 5s;
-  -webkit-animation:  appear 1s linear 1 forwards;
+  -webkit-animation: appear 1s linear 1 forwards;
   -webkit-animation-delay: 5s;
-  -moz-animation:appear 1s linear 1 forwards;
+  -moz-animation: appear 1s linear 1 forwards;
   -moz-animation-delay: 5s;
 }
-
 #lyrics-3 h2:nth-of-type(2) {
   animation: appear 1s linear 1 forwards;
   animation-delay: 5.5s;
-  -webkit-animation:appear 1s linear 1 forwards;
+  -webkit-animation: appear 1s linear 1 forwards;
   -webkit-animation-delay: 5.5s;
-  -moz-animation:appear 1s linear 1 forwards;
+  -moz-animation: appear 1s linear 1 forwards;
   -moz-animation-delay: 5.5s;
 }
-
 #lyrics-3 h2:nth-of-type(3) {
-  animation:appear 1s linear 1 forwards;
+  animation: appear 1s linear 1 forwards;
   animation-delay: 6s;
-  -webkit-animation:appear 1s linear 1 forwards;
+  -webkit-animation: appear 1s linear 1 forwards;
   -webkit-animation-delay: 6s;
-  -moz-animation:appear 1s linear 1 forwards;
+  -moz-animation: appear 1s linear 1 forwards;
   -moz-animation-delay: 6s;
 }
-
 #lyrics-3 h2:nth-of-type(4) {
-  animation:appear 1s linear 1 forwards;
+  animation: appear 1s linear 1 forwards;
   animation-delay: 6.5s;
-  -webkit-animation:appear 1s linear 1 forwards;
+  -webkit-animation: appear 1s linear 1 forwards;
+
   -webkit-animation-delay: 6.5s, 8s;
-  -moz-animation:appear 1s linear 1 forwards;
+  -moz-animation: appear 1s linear 1 forwards;
   -moz-animation-delay: 6.5s;
 }
-
 /* Characters */
-
 .pirate_title {
   font-size: 2.7em;
 }
 
+#slideArea,
+#characters,
+#music-box h2 {
+  color: #fff;
+  text-shadow: 2px 1px 3px #000;
+}
+
 #characters {
   background-color: #5e2a0e;
-  color: #fff;
+  color: gold;
 }
-
 .pirate-crew.character-image {
- background-image: url(assets/sprites/characters/crew/pirate-idle.png);
+  background-image: url(assets/sprites/characters/crew/pirate-idle.png);
 }
-
 .pirate-captain.character-image {
   background-image: url(assets/sprites/characters/captain/captain-4-attack.png);
   height: 200px;
-  width: calc(3876px/12);
+  width: calc(3876px / 12);
   background-position: left center;
   background-size: auto;
   background-repeat: inherit;
   margin: inherit;
 }
-
 .landlubber.character-image {
   transform-origin: bottom;
   -webkit-transform-origin: bottom;
   -moz-transform-origin: bottom;
- background-image: url(assets/sprites/characters/landlubber/landlubber.png);
+  background-image: url(assets/sprites/characters/landlubber/landlubber.png);
 }
-
 #animate_pirate .character-image {
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
 }
-
 #animate_pirate:hover .character-image {
   transform: rotate(-360deg);
   -webkit-transform: rotate(-360deg);
   -moz-transform: rotate(-360deg);
 }
-
-#animate_captain:hover .character-image{
+#animate_captain:hover .character-image {
   animation: attack 0.6s steps(12) 1;
   -webkit-animation: attack 0.6s steps(12) 1;
   -moz-animation: attack 0.6s steps(12) 1;
 }
-
 #animate_landlubber:hover .character-image {
   animation: collapse 0.5s 1 normal ease-in-out forwards;
   -webkit-animation: collapse 0.5s 1 normal ease-in-out forwards;
   -moz-animation: collapse 0.5s 1 normal ease-in-out forwards;
 }
-
-
 /* Items */
-
-.item_title{
+.item_title {
   font-size: 2em;
 }
-
 #cutlass .item-image {
   background-image: url(assets/sprites/props/cutlass.png);
 }
-
 #pistol .item-image {
   background-image: url(assets/sprites/props/flintlock-pistol.png);
 }
-
 #shotgun .item-image {
   background-image: url(assets/sprites/props/blunderbuss.png);
 }
-
 #cannon .item-image {
   background-image: url(assets/sprites/props/cannon.png);
   transition: all 1s linear;
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
 }
-
 #gold .item-image {
   background-image: url(assets/sprites/props/pieces-of-eight.png);
 }
-
 #chest .item-image {
   background-image: url(assets/sprites/props/treasure-chest.png);
-  transition: all 1s ease-in-out
-  -webkit-transition: all 1s ease-in-out
-  -moz-transition: all 1s ease-in-out
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
 }
-
 #flag .item-image,
 #ale .item-image {
   background-position: left center;
@@ -727,20 +748,17 @@ header.sticky img {
   margin: inherit;
   margin: 0 auto;
 }
-
 #flag .item-image {
   background-image: url(assets/sprites/props/jolly-roger-v2.png);
   height: 178px;
-  width: calc(400px/2);
+  width: calc(400px / 2);
   background-position: right center;
 }
-
 #ale .item-image {
   background-image: url(assets/sprites/props/AleV2.png);
   height: 200px;
-  width: calc(1600px/8);
+  width: calc(1600px / 8);
 }
-
 #cutlass:hover .item-image,
 #pistol:hover .item-image,
 #shotgun:hover .item-image {
@@ -748,13 +766,11 @@ header.sticky img {
   -webkit-animation: weapon-rotate 0.3s 1 normal ease-in forwards;
   -moz-animation: weapon-rotate 0.3s 1 normal ease-in forwards;
 }
-
 #gold:hover .item-image {
   animation: wobble 0.3s infinite normal;
   -webkit-animation: wobble 0.3s infinite normal;
   -moz-animation: wobble 0.3s infinite normal;
 }
-
 #cannon:hover .item-image,
 #chest:hover .item-image {
   transform: scale(1.5);
@@ -767,18 +783,14 @@ header.sticky img {
   -webkit-animation: flag-switch 0.5s steps(2) 1;
   -moz-animation: flag-switch 0.5s steps(2) 1;
 }
-
 #ale:hover .item-image {
   animation: empty-mug 0.8s steps(8) reverse 1;
   -webkit-animation: empty-mug 0.8s steps(8) reverse 1;
   -moz-animation: empty-mug 0.8s steps(8) reverse 1;
 }
-
-
-
 /* Music Box */
 #music-box {
-  background-image: url('assets/sprites/props/pirate-island.png');
+  background-image: url("assets/sprites/props/pirate-island.png");
   background-color: #1c8bc1;
   background-size: auto;
   background-position: bottom left;
@@ -790,7 +802,6 @@ header.sticky img {
   -moz-animation: bg-animation 5s infinite alternate-reverse ease-in-out 1.5s;
   animation: bg-animation 5s infinite alternate-reverse ease-in-out 1.5s;
 }
-
 #disc {
   background: #1e1e1e;
   padding: 20px 0;
@@ -798,7 +809,6 @@ header.sticky img {
   border: 10px groove #5e2a0e;
   position: relative;
 }
-
 #tone-arm {
   width: 15px;
   height: 200px;
@@ -810,50 +820,43 @@ header.sticky img {
   z-index: 1;
   transform-origin: top;
 }
-
 #tone-arm.play {
- -webkit-animation: tonearm 93s 1 normal ease-in-out;
- -moz-animation: tonearm 93s 1 normal ease-in-out;
- animation: tonearm 93s 1 normal ease-in-out;
+  -webkit-animation: tonearm 93s 1 normal ease-in-out;
+  -moz-animation: tonearm 93s 1 normal ease-in-out;
+  animation: tonearm 93s 1 normal ease-in-out;
 }
-
 #counterbalance {
-    background: #333;
-    width: 40px;
-    height: 30px;
-    left: -16px;
-    position: absolute;
-    border-radius: 5px;
-    border: #aaa 2px outset;
+  background: #333;
+  width: 40px;
+  height: 30px;
+  left: -16px;
+  position: absolute;
+  border-radius: 5px;
+  border: #aaa 2px outset;
 }
-
 #cartridge {
-    position: absolute;
-    width: 30px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: #aaa;
-    bottom: 0;
-    right: 0;
-    border: 2px groove #bbb;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #aaa;
+  bottom: 0;
+  right: 0;
+  border: 2px groove #bbb;
 }
-
 #trackList {
   text-align: center;
 }
-
 #lp-outer {
   -webkit-animation: turntable 15s infinite normal linear paused;
   -moz-animation: turntable 15s infinite normal linear paused;
   animation: turntable 15s infinite normal linear paused;
 }
-
 #lp-outer.play {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   animation-play-state: running;
 }
-
 #lp-inner,
 #lp-hole,
 #album-art {
@@ -864,13 +867,11 @@ header.sticky img {
   bottom: 0;
   margin: auto;
 }
-
-#lp-wrap{
+#lp-wrap {
   width: 400px;
   height: auto;
   margin: auto;
 }
-
 #lp-outer {
   width: 400px;
   height: 400px;
@@ -879,20 +880,17 @@ header.sticky img {
   position: relative;
   margin: 0 auto;
 }
-
 #lp-inner {
-width: 370px;
-height: 370px;
-background-color: #444;
+  width: 370px;
+  height: 370px;
+  background-color: #444;
 }
-
 #lp-hole {
   width: 10px;
   height: 10px;
   background-color: #fff;
   border: 20px double #333;
 }
-
 #album-art {
   width: 210px;
   height: 210px;
@@ -901,22 +899,30 @@ background-color: #444;
   background-position: center;
   background-size: cover;
 }
-
 #playList {
-  z-index: 1; /* to prevent the edges of turntable from covering the controls*/
-  margin-bottom: 20px;
+  z-index: 1;
+  /* to prevent the edges of turntable from covering the controls */
+  margin: 20px auto;
+  background: #1e1e1e;
+  padding: 20px;
+  width: 400px;
+  border: 10px groove #5e2a0e;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .btn-controls {
   border: none;
   border-radius: 50%;
   padding: 10px;
+  margin: 5px;
   font-size: 30px;
   width: 60px;
   height: 60px;
   text-align: center;
   background-color: #5e2a0e;
-  color: 	#ddd417;
+  color: #ddd417;
+  text-shadow: 1px 1px 3px #1e1e1e;
 }
 
 .speakers {
@@ -927,22 +933,22 @@ background-color: #444;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  border: 10px solid #5e2a0e;
+  border: 10px groove #5e2a0e;
 }
 
 .speakers.left {
-    border-radius: 50% 25% 25%;
+  border-radius: 50% 25% 25%;
 }
-
 .speakers.right {
-    border-radius: 25% 50% 25% 25%;
+  border-radius: 25% 50% 25% 25%;
 }
 
 .tweeter {
   width: 75px;
   height: 75px;
   background: #eee;
-  border: 50px double #444;
+  /* border: 50px double #444; */
+  border: 20px ridge #444;
   margin-bottom: 1em;
 }
 
@@ -950,7 +956,13 @@ background-color: #444;
   width: 150px;
   height: 150px;
   background: #efefef;
-  border: 51px dashed #444;
+  /* border: 51px dashed #444; */
+  border: 51px ridge #444;
+}
+
+.right > .tweeter,
+.right > .woofer {
+  border-style: groove;
 }
 
 .woofer.pulse {
@@ -973,21 +985,32 @@ background-color: #444;
   background-color: #ddd417;
 }
 
-#playArena{
+#playArena {
   height: 600px;
   position: relative;
 }
 
 #sidebar-container {
-  background-color: #1c8bc1;
+  background-color: #1e1e1e;
   padding: 20px;
-  border: 3px solid #000;
+  border: 10px groove #5e2a0e;
+  border-radius: 10px;
+  color: #fff;
 }
 
+#about h3,
+#sidebar-container h3 {
+  font-size: 3em;
+}
+#sidebar-container li {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-transform: capitalize;
+}
 .captain {
   height: 200px;
   background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
-  width: calc(3876px/12);
+  width: calc(3876px / 12);
   background-position: left center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -995,7 +1018,6 @@ background-color: #444;
   position: absolute;
   top: calc(100% - 200px);
 }
-
 .captain.attack {
   animation: attack 0.6s steps(12) 1;
   -webkit-animation: attack 0.6s steps(12) 1;
@@ -1003,37 +1025,75 @@ background-color: #444;
   background-repeat: inherit;
   background-image: url(assets/sprites/characters/captain/captain-4-attack.png);
 }
-
 .captain.jump {
   background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
   animation: jump 0.8s linear alternate-reverse;
   -webkit-animation: jump 0.8s linear alternate-reverse;
   -moz-animation: jump 0.8s linear alternate-reverse;
 }
-
 .captain.left {
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
 }
-
 .captain.right {
   transform: scaleX(1);
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   background-image: url(assets/sprites/characters/captain/captain-idle-4.png);
 }
-
 /* about */
-
 #about {
   background-color: #1c8bc1;
 }
-
 /* footer */
-
 footer {
   background-color: #000000;
   color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .speakers {
+    margin: 10px auto;
+  }
+  #tone-arm {
+    right: 40px;
+  }
+  #speaker-left {
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mobile {
+    display: flex;
+  }
+
+  #menu {
+    position: absolute;
+    left: -999999px;
+    flex: 1 100%;
+    max-width: 100%;
+    background: #1c8bc1;
+  }
+
+  #menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu li a {
+    font-size: 2em;
+    padding: 10px;
+  }
+
+  header.sticky {
+    height: 80px;
+  }
+
+  #tone-arm {
+    right: 20px;
+  }
 }
